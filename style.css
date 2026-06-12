@@ -23,6 +23,19 @@ a:visited {
     color: inherit;
     outline: none;
 }
+/* Target the actual text links inside your header buttons */
+.header-buttons a, 
+.book-appointment-btn a,
+a[class*="btn"] {
+    color: black !important;         /* Forces the text to stay white on iPhone */
+    text-decoration: none !important;  /* Stops iOS from adding an underline */
+}
+
+/* Optional: If you want a different color when someone taps/hovers over it */
+.header-buttons a:hover,
+.book-appointment-btn a:hover {
+    color: #000000 !important;         /* Changes text to black on hover if background turns gold */
+}
 
 /*------dropdown section-----*/
     .services2{
@@ -44,7 +57,7 @@ a:visited {
     .services2.open{
         height: 340px;
         visibility: visible;
-        padding: 8px;
+        padding: 8px 0;
     }
 
 
@@ -70,6 +83,7 @@ a:visited {
   /* Optimizes mobile performance */
   will-change: transform; 
 }
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -198,7 +212,11 @@ nav{
         scale: 1.1;
          transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     }
-
+    .tp span{
+         font-family: "Caveat", cursive;
+        font-size: 13px;
+        font-weight: 900;
+    }
 
 .down{
         color: white;
@@ -492,6 +510,468 @@ footer ul{
     height: 55px;
     bottom:20px;
     right: 20px;
+    text-align: center;
+    transform: translateY(-10%);
+    background-color: #25D366;
+    box-shadow: 0 0 15px black;
+    transition: 0.2s ease-in-out;
+
+}
+.help i{
+    font-size: 40px;
+    padding:auto;
+    color: white;
+    transform: translateY(20%);
+    font-weight: 500;
+}
+.help:hover{
+   scale: 1.2;
+}
+}
+
+@media (max-width:480px){
+
+    body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Put your exact background image path here */
+  background-image: url(images/photo_2026-06-06_13-02-30.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* This pushes the image behind your website cards and text */
+  z-index: -1; 
+  
+  /* Optimizes mobile performance */
+  will-change: transform; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+    overflow: hidden;
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+    transform: translateX(-35%);
+    margin-top: -15px;
+}
+.services{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 30px;
+    font-weight: 600;
+}
+.services li{
+    text-decoration: none;
+    color: white;
+}
+.menu-btn i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 30px -40px;
+}
+section{
+    overflow: hidden;
+}
+.services2 a{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        line-height: 3.3;
+    }
+    .services2 li{
+        color: white;
+    }
+    .services2 :hover{
+        background-color: #E5D1A3;
+        color: black;
+        border-radius: 30px;
+    }
+ .services {
+        display: none;
+    
+    }
+    .logo{
+        margin: 0 17% ;
+    } 
+    .menu-btn{
+        transform: translateY(-10%);
+    }
+    .services2{
+        display: block;
+    }
+.welly img{
+    margin-top: 50px;
+}
+.talk{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: -10%;
+    padding: 20px;
+    color: white;
+  font-family: "Caveat", cursive;
+  font-style: normal;
+}
+    .talk h1{
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 900;
+         font-style: normal;
+         margin-top: -70px;
+         margin-left: -5px;
+    }
+    .talk p{
+        font-family: "Caveat", cursive;
+        font-size: 13px;
+        font-weight: 900;
+    }
+    .talk-del{
+        display: flex;
+         margin-left: 20px;
+    }
+    .talk .btn1{
+        padding: 10px 5px;
+        margin: 10px 0;
+        box-shadow: 4px 4px #E5D1A3;
+        width: 142px;
+        background-color: #C89B54;
+        cursor: pointer;
+        border: 1px solid #E5D1A3;
+        font-weight: 600;
+        
+        
+    }
+    .talk .btn2{
+        padding:10px 7px;
+        margin:10px 20px;
+        width: 140px;
+        box-shadow: 4px 4px #E5D1A3;
+        background-color: #C89B54;
+        cursor: pointer;
+        border: 1px solid #E5D1A3;
+        font-weight: 600;
+    }
+    .talk span{
+        color: #C89B54;
+    }
+    .talk .btn1:hover{
+        scale: 1.1;
+         transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .talk .btn2:hover{
+        scale: 1.1;
+         transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .tp span{
+         font-family: "Caveat", cursive;
+        font-size: 13px;
+        font-weight: 900;
+    }
+
+.down{
+        color: white;
+        margin-top: -60px;
+}
+.down-del{
+    margin: 50px auto;
+
+}
+.pic-grid2 img{
+    border-radius: 5px;
+    width: 200px;
+    height: 270px;
+    margin: 30px 20px;
+     box-shadow: -7px 7px 7px #E5D1A3;
+    border-right: 2.5px solid #E5D1A3;
+    border-top: 2.5px solid #E5D1A3; ;
+}
+.pic-grid2 p{
+    margin-top: 18%;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.pic-grid3 img{
+    border-radius: 5px;
+    width: 200px;
+    height: 270px;
+    margin: 30px 20px;
+     box-shadow: 7px 7px 7px #E5D1A3;
+    border: 2.5px solid #E5D1A3;
+}
+.pic-grid3 p{
+    margin-top: 18%;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+.pic-grid{
+    margin-top: -200%;
+    display: flex;
+}
+.pic-grid2{
+    display: flex;
+}
+.pic-grid3{
+    display: flex;
+
+}
+.service-head .ps{
+    background-color:  rgb(18, 18, 18,0.8);
+    border-top: 1px solid #E5D1A3;
+    border-bottom: 1px solid #E5D1A3;
+    margin-top: 30%;
+}
+.service-head .p1{
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    color: #C89B54;
+    margin: 10px;
+}
+.service-head span{
+    color: #C89B54;
+}
+.service-head .p2{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.box-lists{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.box-lists2{
+     display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.our-service{
+    border: 1px solid rgb(229, 209, 163);
+    width: 250px;
+    height: 325px;
+    background-color: rgb(18, 18, 18,0.8);
+    box-shadow: 5px 5px 0 #E5D1A3;
+}
+.our-service p{
+    color: white;
+    font-size: 12px;
+    margin: 5% 5%;
+}
+.our-service a{
+    text-decoration: none;
+    color: #E5D1A3; 
+    margin:10px;
+    font-weight: 600;
+    transform: translateY(29%);
+}
+.box1{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 50px;
+}
+.our-service img{
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    justify-content: center;
+    margin-top: -10px;
+    transform: translateX(-10%);
+}
+.down2{
+        color: white;
+        margin-top: -30%;
+
+}
+.service-btn{
+    width: 150px;
+    padding: 15px 10px;
+    box-shadow: 4px 4px #E5D1A3;
+    outline: none;
+    font-weight: 600;
+    background-color: #C89B54;
+    margin: 15px 30%;
+    cursor: pointer;
+    border-color: #E5D1A3;
+    border: 1px solid #E5D1A3;
+}
+.service-btn:hover{
+    scale: 1.1;
+}
+.choose{
+    color: white;
+    margin: 18% 10px;
+    line-height: 1.5;
+}
+.choose h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.choose span{
+    color: #C89B54;
+}
+.choose ul{
+    margin: 5px;
+     border: 1px solid #E5D1A3;
+     padding: 20px;
+     background-color: rgb(18, 18, 18,0.8);
+     box-shadow: 8px 8px #E5D1A3;
+}
+.choose li{
+    padding: 5px;
+}
+.abt{
+    color: white;
+    margin-top: 25%;
+    background-color: rgb(18, 18, 18,0.8);
+    padding: 10px;
+    text-align: start;
+    margin: 20px 0;
+    line-height: 1.3;
+}
+.abt .p4{
+    margin: 20px -10px;
+    font-size: 13px;
+
+}
+.abt .p3{
+    font-size: 13px;
+}
+.abt span{
+    color: #C89B54;
+    font-weight: 600;
+}
+
+.ceo{
+    display: flex;
+}
+.ceo img{
+    width: 130px;
+    height:78px ;
+    border-radius: 80px;
+    margin-top: 15px;
+    border: 2px solid white;
+}
+
+.ceo span{
+    color: #C89B54;
+}
+.abt-btn{
+    width: 100px;
+    padding: 9px 5px;
+    display: flex;
+    background-color: #C89B54;
+    margin: 20px  auto;
+    box-shadow: 4px 4px #E5D1A3;
+    border: none;
+    outline: none;
+    margin-top: -10px;
+    font-weight: 600;
+}
+.abt-btn:hover{
+    scale:1.1
+}
+footer{
+    background-color:  black;
+    margin-top: 30%;
+    color: white;
+    padding: 0px 10px;
+}
+footer h1{
+    color: #C89B54;
+    margin:5px 10px;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    transform: translateY(40%);
+}
+.up{
+    margin: 20px 0;
+}
+.up p{
+    margin:15px 10px;
+    font-size: 13px;
+}
+footer h3{
+    margin: 5px 10px;
+    font-size: 18px;
+     font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.links{
+    margin: 25px 0;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+footer ul{
+    margin: 0 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.contact{
+    margin: 20px 0;
+    font-size: 14px;
+}
+.contact p{
+    margin: 7px 10px;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.socials ul{
+    display: flex;
+    justify-content: space-around;
+}
+.socials a{
+    color: white;
+    list-style: none;
+}
+.socials i{
+    font-size: 35px;
+    margin: 20px;
+}
+.socials i:hover{
+    scale: 1.2;
+    color: #C89B54;
+}
+.copy{
+    text-align: center;
+    font-size: 12px;
+}
+.help {
+    font-size: 40px;
+    border-radius: 40px;
+    z-index: 1200;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom:20px;
+    right: 10px;
     text-align: center;
     transform: translateY(-10%);
     background-color: #25D366;
