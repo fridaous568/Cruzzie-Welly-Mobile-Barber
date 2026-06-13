@@ -5,6 +5,17 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
 }
+/* Target the button directly */
+.button {
+  background-color: inherit !important; /* Forces your custom color (e.g., Gold) */
+  color: inherit !important;            /* Forces white text */
+  border: none !important;
+}
+
+/* Fixes the browser's "already clicked" blue link rule */
+.button:visited {
+  color: inherit !important;
+}
 body{
     background-color: black;
 }
@@ -529,7 +540,7 @@ footer ul{
 }
 }
 
-@media (max-width:480px){
+@media (max-width:360px){
 
     body::before {
   content: "";
@@ -713,7 +724,7 @@ section{
     border: 2.5px solid #E5D1A3;
 }
 .pic-grid3 p{
-    margin-top: 18%;
+    margin-top: 16%;
     line-height: 1.5;
     margin-left: 20px;
 }
@@ -764,7 +775,7 @@ section{
 .our-service{
     border: 1px solid rgb(229, 209, 163);
     width: 250px;
-    height: 325px;
+    height: 335px;
     background-color: rgb(18, 18, 18,0.8);
     box-shadow: 5px 5px 0 #E5D1A3;
 }
