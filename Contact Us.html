@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Cruzzie Welly Mobile Barber</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+      <nav class="nav2">
+        <div class="logo">
+           <a href="index.html"><img src="images/photo_1_2026-06-04_04-21-06.jpg"></a>
+        </div>
+        <ul class="services">
+            <a href="index.html"><li>Home</li></a>
+             <a href="#"><li>About Us</li></a>
+              <a href="Our service.html"><li>Services</li></a>
+               <a href="#"><li>Contact </li></a>
+                <a href="#"><li>Gallery</li></a>
+        </ul>
+        <div class="menu-btn">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+    </div>
+      <!----------dropdown section-->
+    <div>
+      <ul class="services2">
+            <a href="index.html"><li>Home</li></a>
+              <a href="Our service.html"><li>Services</li></a>
+              <a href="About Us.html"><li>About Us</li></a>
+               <a href="Contact Us.html"><li>Contact </li></a>
+                <a href="#"><li>Gallery</li></a>
+                 <a href="#"><li>Prices</li></a>
+        </ul>
+
+        <script>
+        const menubtn = document.querySelector('.menu-btn');
+        const menubtnicon = document.querySelector('.menu-btn i');
+        const services2 = document.querySelector('.services2');
+        
+        menubtn.addEventListener('click', function () {
+
+         services2.classList.toggle('open');
+
+            const isOpen = services2.classList.contains('open');
+
+            menubtnicon.className = isOpen
+            ?'bx bx-x'
+            : 'bx bx-menu';
+
+            document.addEventListener("click", function (event) {
+
+    if (!services2.contains(event.target) &&
+        !menubtn.contains(event.target)) {
+
+        services2.classList.remove('open');
+        menubtnicon.className = 'bx bx-menu';
+
+    }
+
+});
+        });
+    
+       </script>
+    </div>
+    
+
+       <div class="contact-del">
+        <h1>CONTACT <span>US</span></h1>
+        <P class="p1">We're Here For You</P>
+        <p class="p2">Have a question, need to book an appointment or want to make an enquiry? Reach out to us and we'll get back to you as soon as possible.</p>
+       </div>
+       <div class="con-btn">
+        <button class="btn1"  type="submit"><a href="https://wa.me/2348088994887?text=Hello%20%F0%9F%91%8B%20I%20visited%20Cruzzie%20Welly%20Mobile%20Barber%20website%20and%20I%20would%20like%20to%20make%20an%20enquiry"><i class='bx bx-chat'></i>Chat Us On Whatsapp</a></button> <button class="btn2"  type="submit"><a href="https://wa.me/2348088994887?text=Hello%20Cruzzie%20Welly,%20I%20want%20to%20book%20an%20appointment"><i class='bx bx-calendar'></i>Book Appointment</a></button>
+       </div>
+        
+       <div class="con-touch">
+       <h1>Get In <span>Touch</span></h1>
+       <div class="con-del">
+        <i class='bx bx-phone'></i>
+        <p><span>Phone:</span><br>08088994887</p>
+       </div>
+
+       <div class="con-del">
+        <i class='bx bxl-whatsapp'></i>
+        <p><span>WhatsApp:</span><br><a href="https://wa.me/2348088994887?text=Hello%20👋%20I%20visited%20Cruzzie%20Welly%20Mobile%20Barber%20website%20and%20I%20would%20like%20to%20make%20an%20enquiry.">08088994887</a></p>
+       </div>
+
+       <div class="con-del">
+        <i class='bx bx-envelope'></i>
+        <p><span>Email:</span><br><a href="mailto:hedoholuwatobitaiwo@gmail.com"> hedoholuwatobitaiwo@gmail.com</a></p>
+       </div>
+
+       <div class="con-del">
+        <i class='bx bx-map'></i>
+        <p><span>Location:</span><br><a href="https://maps.app.goo.gl/wKEfok7dGzxfDBDfA?g_st=ic"> Next Unisex Salon~Liasu Branch
+            62 Liasu Rd, Ikotun, Lagos 102213, Lagos</a></p>
+       </div>
+
+       <div class="con-del">
+        <i class='bx bx-time'></i>
+        <p><span>Open:</span><br> Mon - Sat | 9:00 AM - 9:00 PM</p>
+       </div>
+       </div>
+       
+       <div class="con-message">
+        <h1>SEND US A <span>MESSAGE</span></h1>
+
+        <div class="message-del">
+        <input type="text" placeholder="Full Name">
+        <input type="tel" placeholder="Phone Number">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Write a message"></textarea>
+       
+       <button type="submit"><i class='bx bxl-telegram'></i>Send Message</button>
+        </div>
+
+    
+       </div>
+       </div>
+
+       <footer class="con-footer">
+         <div class="up">
+            <h1>Cruzzie Welly</h1>
+    
+            <p> Sharp cuts, clean fades, and premium grooming services tailored to your style. Step in for confidence, leave with excellence.</p>
+         </div>
+
+         <div class="links">
+            <h3>Quick Links</h3>
+           <ul class="">
+            <a href="#"><li>Home</li></a>
+             <a href="#"><li>About Us</li></a>
+              <a href="Our service.html"><li>Services</li></a>
+               <a href="#"><li>Contact </li></a>
+                <a href="#"><li>Gallery</li></a>
+        </ul>
+         </div>
+
+         <div>
+            <h3>Our Service</h3>
+            <ul>
+                <li>Hair Cutting</li>
+                <li>Beard Trim</li>
+                <li>Hair coloring</li>
+                <li>Kids Cutting</li>
+                <li>Home Service</li>
+                <li>Dread Locks</li>
+            </ul>
+         </div>
+
+         <div class="contact">
+            <h3>Contact Info</h3>
+            <p>📍 Address:<a href="https://maps.app.goo.gl/wKEfok7dGzxfDBDfA?g_st=ic"> Next Unisex Salon~Liasu Branch
+                    62 Liasu Rd, Ikotun, Lagos 102213, Lagos</a></p>
+               <p>📞 Phone: +234 8088994887</p>
+               <p>📧 Email:<a href="mailto:hedoholuwatobitaiwo@gmail.com"> hedoholuwatobitaiwo@gmail.com</a></p>
+               <p>🕒 Open: Mon - Sat | 9:00 AM - 9:00 PM</p>
+         </div>
+         <div class="socials">
+            <ul>
+                <a href="#"><li><i class='bx bxl-facebook'></i></li></a>
+                 <a href="#"><li><i class='bx bxl-instagram'></i></li></a>
+                  <a href="#"><li><i class='bx bxl-tiktok'></i></li></a>
+                   <a href="#"><li><i class='bx bxl-whatsapp'></i></li></a>
+            </ul>
+        </div>
+         <p class="copy">&copy Cruzzie Welly. All Reserved. Designed by Fin's Tech</p>
+         
+        </footer>
+
+    <div class="help">
+       <a href="https://wa.me/2348088994887?text=Hello%20%F0%9F%91%8B%20I%20visited%20Cruzzie%20Welly%20Mobile%20Barber%20website%20and%20I%20would%20like%20to%20make%20an%20enquiry"><i class='bx bxl-whatsapp'></i></a>
+    </div>
+</body>
+</html>
+    
+
+       

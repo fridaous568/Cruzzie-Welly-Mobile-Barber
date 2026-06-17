@@ -83,7 +83,7 @@ a[class*="btn"] {
   height: 100%;
   
   /* Put your exact background image path here */
-  background-image: url(images/photo_2026-06-07_19-45-35.jpg); 
+  background-image: url(images/photo_2026-06-06_13-02-30.jpg); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,12 +190,14 @@ nav{
         display: flex;
         justify-content: center;
         align-self: center;
+        gap: 40px;
     }
     .talk .btn1{
-        padding: 10px 5px;
+        padding: 5px 5px;
         margin: 10px 0;
         box-shadow: 4px 4px #E5D1A3;
         width: 142px;
+        height: 43px;
         background-color: #C89B54;
         cursor: pointer;
         border: 1px solid #E5D1A3;
@@ -203,9 +205,10 @@ nav{
         
     }
     .talk .btn2{
-        padding:10px 7px;
-        margin:10px 20px;
-        width: 140px;
+        padding:10px;
+        height: 45px;
+        margin:10px 0px;
+        width: 142px;
         box-shadow: 4px 4px #E5D1A3;
         background-color: #C89B54;
         cursor: pointer;
@@ -242,7 +245,7 @@ nav{
     width: 200px;
     height: 270px;
     margin: 30px 20px;
-     box-shadow: -7px 7px 7px #E5D1A3;
+     box-shadow: -4px 4px 0px #E5D1A3;
     border-right: 2.5px solid #E5D1A3;
     border-top: 2.5px solid #E5D1A3; ;
 }
@@ -256,7 +259,7 @@ nav{
     width: 200px;
     height: 270px;
     margin: 30px 20px;
-     box-shadow: 7px 7px 7px #E5D1A3;
+     box-shadow: 4px 4px 0px #E5D1A3;
     border: 2.5px solid #E5D1A3;
 }
 .pic-grid3 p{
@@ -279,7 +282,7 @@ nav{
     background-color:  rgb(18, 18, 18,0.8);
     border-top: 1px solid #E5D1A3;
     border-bottom: 1px solid #E5D1A3;
-    margin-top: 30%;
+    margin-top: 15%;
 }
 .service-head .p1{
     text-align: center;
@@ -312,7 +315,7 @@ nav{
     border: 1px solid rgb(229, 209, 163);
     width: 200px;
     height: 285px;
-    background-color: rgb(18, 18, 18,0.8);
+    background-color: #121212cc;
     margin: 10px;
     box-shadow: 5px 5px 0 #E5D1A3;
 }
@@ -355,13 +358,17 @@ nav{
     outline: none;
     font-weight: 600;
     background-color: #C89B54;
-    margin: 15px 34%;
+    margin:32%;
+    transform: translateY(-799%);
     cursor: pointer;
     border-color: #E5D1A3;
     border: 1px solid #E5D1A3;
 }
 .service-btn:hover{
     scale: 1.1;
+}
+.chose{
+    margin-top: -110%;
 }
 .choose{
     color: white;
@@ -413,7 +420,7 @@ nav{
     gap: 20px;
 }
 .ceo img{
-    width: 90px;
+    width: 105px;
     height:78px ;
     border-radius: 80px;
     margin-top: 15px;
