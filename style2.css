@@ -80,7 +80,6 @@ a[class*="btn"] {
 .ser-pre span{
     font-weight: 900;
       font-family: "Bebas Neue", sans-serif;
-    font-weight: 900;
      color:  #C89B54;
 }
 .ser-pre .p1{
@@ -98,13 +97,12 @@ a[class*="btn"] {
     justify-content: space-between;
 }
 .ser-del{
-    border: 1px solid  #E5D1A3;
-    width: 190px;
+    width: 200px;
     height: 250px;
     background-color:  rgb(18, 18, 18);
     text-align: center;
-    box-shadow: 3px 3px #E5D1A3;
     overflow: hidden;
+    border-radius: 10px;
 }
 .ser-lists img{
     transform: translateY(-10%);
@@ -138,22 +136,58 @@ a[class*="btn"] {
      transform: translateY(-10%);
 
 }
-.del-img{ 
-    height: 150px;
+.ser-lists2{
+    margin-top:50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 40px 5px;
+    justify-content: center
+
+}
+.ser-del2{
+    width: 400px;
+    height: 550px;
+    background-color:  rgb(18, 18, 18);
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 20px;
+    border: 2px solid #C89B54;
+}
+
+.del-img2{ 
+    width: 100%;
+    border-radius: 20px;
     overflow: hidden;
 }
-.ser-del h1{
-    font-size: 13px;
+.ser-del2 h1{
+    font-size: 30px;
     color: #C89B54;
     margin: 10px;
+    font-weight: 900;
+    font-family: "Bebas Neue", sans-serif;
 }
-.ser-del p{
+.ser-del2 p{
     color: white;
-    font-size: 15px;
-    padding: 0 10px;
+    font-size: 14px;
+    font-family: "poppins" sans-serif;
+    font-weight: 500;
+    transform: translateY(-10%);
 }
-.ser-del .p1{
+.ser-del2 .p1{
     transform: translateY(-20%);
+}
+.del-img2{
+    height: 400px;
+    overflow: hidden;
+}
+.ser-del2 .img10{
+    transform: translateY(-10%);
+}
+.ser-del2 .img11{
+    transform: translateY(-30%);
+}
+.ser-del2 .img12{
+    transform: translateY(-6%);
 }
 .book{
     margin: 40px 20px;
@@ -571,5 +605,4 @@ footer ul{
     border-radius: 10px;
     transform: translateX(10%);
     margin:40px 5PX;
-}
 }
